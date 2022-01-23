@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Adress from './components/Adress';
+import FullName from './components/FullName';
+import Profile from './components/Profile';
+import ProfilePhoto from './components/ProfilePhoto';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Profile   pays="France" />
+      <ProfilePhoto image= "https://static.vecteezy.com/ti/vecteur-libre/p1/2733118-femme-profil-visage-abstrait-gratuit-vectoriel.jpg"/>
+      <FullName fullname="Samar Khiari" />
+      <Adress adress="Tunisie"/>
     </div>
   );
 }
